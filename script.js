@@ -5,7 +5,6 @@ function mostrarResultadoTabela(lista) {
             tabela.rows[i + 1].cells[j].innerHTML = lista[i][j];
     }
 }
-    // alert(String(tabela.rows.length))
 
 }
 
@@ -13,8 +12,10 @@ document.getElementById('meuBotao').addEventListener('click', function () {
 
     const numero = parseInt(document.getElementById('numero-input').value);
 
+    const aviso = document.querySelector('.aviso');
+
     if (isNaN(numero) || numero == "") {
-        alert("Digite um número!")
+        aviso.innerText = "Digite um número!";
         return;
     }
 
@@ -23,11 +24,9 @@ document.getElementById('meuBotao').addEventListener('click', function () {
     for (i = 1; i <= 10; i++) {
         let resultado = i * numero;
         lista_numero.push([i, numero, resultado])
-        // lista_numero.push(`${i} * ${numero} = ${resultado}`);
     }
 
-
-    // alert(lista_numero.join('\n'))
+    aviso.innerText = " ";
     mostrarResultadoTabela(lista_numero);
     
 });
