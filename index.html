@@ -5,23 +5,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercícios DOM</title>
+    <title>Tabuada</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+    <div class="background-effect-top"></div>
+    <div class="background-effect-bottom"></div>
+
     <section class="multiplication-table-structure">
-        <div class="titulo-structure">
-            <label class="titulo" for="meuBotao">Digite um número</label>
-            <span class="emoji-sorrindo">😊</span>
+        <div class="title-structure">
+            <label class="title" for="generate-button">TABUADA</label>
+            <span class="smile-emote">😊</span>
         </div>
+
         <div class="input-button">
-            <input class="numero-input" id="numero-input" type="text" placeholder="N°">
-            <button class="meuBotao" id="meuBotao">Gerar Tabuada</button>
+            <input class="number-input" id="number-input" type="text" placeholder="N°">
+            <button class="generate-button" id="generate-button">GERAR</button>
         </div>
-        <div class="aviso" id="aviso">
+
+        <div class="warning" id="warning">
             <p></p>
         </div>
+
         <table id="table" class="table">
             <tr>
                 <th>X</th>
@@ -74,10 +81,17 @@
                 <td></td>
             </tr>
         </table>
+        
     </section>
 
-    <script src="script.js"></script>
+   <div class="decoration-images">
+        <img class="img" src="img/emc_2.png" alt="" >
+        <img class="img" src="img/livro_matematica.png" alt="" >
+        <img class="img" src="img/simbolo_funcao.png" alt="" >
+        <img class="img" src="img/simbolos_matematica.png" alt="" >
+    </div>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
